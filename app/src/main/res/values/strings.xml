@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">chatfirebase</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chats_fragment">Chats fragment</string>
+    <string name="friends_fragment">Friends fragment</string>
+    <string name="request_fragment">Request fragment</string>
+
+</resources>

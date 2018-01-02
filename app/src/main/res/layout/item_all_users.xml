@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/relative_iamge"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_all_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp"
+            />
+        <ImageView
+            android:id="@+id/imgvi_profile_status"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/bullet_green"
+            android:layout_marginLeft="-15dp"
+            android:layout_toRightOf="@id/profile_all_user"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        >
+        <TextView
+            android:id="@+id/tv_all_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BAC SI TRAN MINH TUAN"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_all_user_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benh vien Ung Buu"
+            android:layout_below="@+id/tv_all_user_name"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

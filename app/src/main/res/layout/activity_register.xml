@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.chatfirebase.RegisterActivity">
+
+    <include layout="@layout/main_app_bar"
+        android:id="@+id/register_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true"
+        >
+        <EditText
+            android:id="@+id/edt_name_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name.."
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/edt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email.."
+            android:inputType="textEmailAddress"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/edt_pass_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pass.."
+            android:inputType="textPassword"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Create New Account"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        />
+</RelativeLayout>
